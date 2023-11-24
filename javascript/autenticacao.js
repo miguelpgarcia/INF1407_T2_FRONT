@@ -1,5 +1,7 @@
 "use strict";
 window.addEventListener('load', () => {
+    const DeployBackAddress = "http://miguelgarcia2.pythonanywhere.com/";
+    
     // Verifica o username e coloca no cabeçalho da página
     const token = localStorage.getItem('token'); // Recupera o token de autenticação
     // Check if token is not null before using it in the headers
@@ -9,7 +11,7 @@ window.addEventListener('load', () => {
     if (token !== null) {
         headers['Authorization'] = token;
     }
-    fetch(backendAddress + 'accounts/token-auth/', {
+    fetch(DeployBackAddress + 'accounts/token-auth/', {
         method: 'GET',
         headers: headers,
     })
