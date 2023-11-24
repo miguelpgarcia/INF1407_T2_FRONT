@@ -7,7 +7,7 @@ onload = function () {
 function exibeListaPubs() {
     const DeployBackAddress = "http://miguelgarcia2.pythonanywhere.com/";
     console.log("Oi");
-    fetch(backendAddress + "forum/pub/lista/")
+    fetch(DeployBackAddress + "forum/pub/lista/")
         .then(response => response.json())
         .then(pubs => {
         console.log(pubs);
