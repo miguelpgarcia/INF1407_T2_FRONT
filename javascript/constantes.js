@@ -1,3 +1,3 @@
 "use strict";
-//const backendAddress = 'http://127.0.0.1:8000/';
-const backendAddress = 'http://miguelgarcia2.pythonanywhere.com/';
+//const backendAddress = 'https://127.0.0.1:8000/';
+const backendAddress = 'https://miguelgarcia2.pythonanywhere.com/';
