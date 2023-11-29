@@ -13,7 +13,7 @@ onload = (evento) => {
             .then(response => {
             const mensagem = document.getElementById('mensagem');
             if (response.ok) {
-                window.location.assign('/');
+                window.location.assign('/index.html');
             }
             else {
                 mensagem.innerHTML = 'Erro ' + response.status;
